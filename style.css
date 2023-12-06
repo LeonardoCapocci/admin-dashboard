@@ -42,11 +42,53 @@ html, body {
     background-color: white;
     grid-column: 2 / 3;
     display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 
 .header-upper {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.header-upper div {
+    align-items: center;
+    display: flex;
+}
+
+.search-bar-container {
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+.search-bar-container button {
+    border-radius: 7px;
+}
+
+.search-bar {
+    width: 80%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.bell {
+    height: 30px;
+    width: auto;
+}
+
+.clank {
+    margin: 2px;
+    height: 40px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.far-right {
+    margin-right: 10px;
 }
 
 .header-lower {
